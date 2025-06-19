@@ -7,7 +7,9 @@ import 'package:weekly_summary_dashboard/helpers/screen_config.dart';
 import 'package:weekly_summary_dashboard/helpers/size_extensions.dart';
 import 'package:weekly_summary_dashboard/helpers/sizedbox.dart';
 import 'package:weekly_summary_dashboard/screen/weekly_summary_dashboard/controller/weekly_summary_controller.dart';
+import 'package:weekly_summary_dashboard/screen/weekly_summary_dashboard/widgets/dailysteps_graph.dart';
 import 'package:weekly_summary_dashboard/screen/weekly_summary_dashboard/widgets/expanded_card.dart';
+import 'package:weekly_summary_dashboard/screen/weekly_summary_dashboard/widgets/moodtrend_graph.dart';
 import 'package:weekly_summary_dashboard/screen/weekly_summary_dashboard/widgets/normalpercentage_card.dart';
 import 'package:weekly_summary_dashboard/screen/weekly_summary_dashboard/widgets/roundpercentage_card.dart';
 
@@ -194,13 +196,8 @@ class _WeeklySummaryScreenState extends State<WeeklySummaryScreen> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      sizedBoxWithHeight(10),
-                      Image.asset(
-                        "assets/images/graph_image.png",
-                        height: 205,
-                        width: 313,
-                        fit: BoxFit.cover,
-                      )
+                      sizedBoxWithHeight(20),
+                      StepBarChart(),
                     ],
                   )),
               sizedBoxWithHeight(20),
@@ -311,12 +308,7 @@ class _WeeklySummaryScreenState extends State<WeeklySummaryScreen> {
                         ),
                       ),
                       sizedBoxWithHeight(20),
-                      Image.asset(
-                        "assets/images/mood_graph.png",
-                        height: 260,
-                        width: 313,
-                        fit: BoxFit.cover,
-                      )
+                      MoodtrendGraph(),
                     ],
                   )),
               sizedBoxWithHeight(20),

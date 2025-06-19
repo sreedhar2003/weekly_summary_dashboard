@@ -85,4 +85,12 @@ class WeeklySummaryController with ChangeNotifier {
     },
   ];
   bool isExpanded = false;
+
+  // steps graph
+  final List<int> steps = [7000, 10000, 8000, 6000, 9500, 7500, 6200];
+  final List<String> days1 = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+
+  // mood graph
+  final List<double> values = [5, 4, 3, 2, 4, 3, 3];
+  final List<String> days2 = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 }
