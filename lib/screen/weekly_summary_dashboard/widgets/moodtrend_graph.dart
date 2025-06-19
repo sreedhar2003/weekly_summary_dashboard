@@ -2,7 +2,6 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weekly_summary_dashboard/helpers/appcolors.dart';
-import 'package:weekly_summary_dashboard/helpers/screen_config.dart';
 import 'package:weekly_summary_dashboard/screen/weekly_summary_dashboard/controller/weekly_summary_controller.dart';
 
 class MoodtrendGraph extends StatelessWidget {
